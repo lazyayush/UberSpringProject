@@ -2,12 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/UberAuthService" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/UberBookingService" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/UberEntityService" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/UberLocationService" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/UberReviewService" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/UberServiceDiscover" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/UberSocketServer" vcs="Git" />
   </component>
 </project>
