@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UberAuthService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/UberAuthService.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UberBookingService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/UberBookingService.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UberEntityService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/UberEntityService.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UberLocationService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/UberLocationService.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UberReviewService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/UberReviewService.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UberServiceDiscover.main.iml" filepath="$PROJECT_DIR$/.idea/modules/UberServiceDiscover.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UberSocketServer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/UberSocketServer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/UberSpringProject.iml" filepath="$PROJECT_DIR$/.idea/UberSpringProject.iml" />
+    </modules>
+  </component>
+</project>

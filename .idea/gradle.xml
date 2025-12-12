@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/UberAuthService" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/UberAuthService" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/UberBookingService" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/UberBookingService" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/UberEntityService" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/UberEntityService" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/UberLocationService" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/UberLocationService" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/UberReviewService" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/UberReviewService" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/UberServiceDiscover" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/UberServiceDiscover" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/UberSocketServer" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/UberSocketServer" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
