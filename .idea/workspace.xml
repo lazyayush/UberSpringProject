@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0eb26778-cc15-4453-975c-22be939693b2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberAuthService" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberBookingService" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberEntityService" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberLocationService" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberReviewService" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberServiceDiscover" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberSocketServer" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/UberAuthService">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/UberBookingService">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/UberEntityService">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/UberLocationService">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/UberReviewService">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/UberServiceDiscover">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/UberSocketServer">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="UberLocationService" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="36kCRT73HfwsmB9z0zNt6z5pGaS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0eb26778-cc15-4453-975c-22be939693b2" name="Changes" comment="" />
+      <created>1765541175528</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765541175528</updated>
+    </task>
+    <servers />
+  </component>
+</project>

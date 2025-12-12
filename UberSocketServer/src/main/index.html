@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Socket Client</title>
+    <script src="https://cdn.jsdelivr.net/sockjs/1.1.4/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+</head>
+<body>
+
+<div>
+    <input type="text" id="driverId" placeholder="Enter your driverId">
+    <button onclick="connect()">Connect</button>
+</div>
+
+<ul id="rideList"></ul>
+
+<script>
+    var stompClient = null;
+
+    function connect() {
+        const driverId = document.getElementById("driverId").value;
+        if (!driverId) {
+            alert("Please enter your driverId first");
+            return;
+        }
+
+        const socket = new SockJS("http://localhost:7480/ws");
+        stompClient = Stomp.over(socket);
+
+        stompClient.connect({}, function () {
+            console.log("Connected as driver: " + driverId);
+
+            // Subscribe only to your own driver topic
+            stompClient.subscribe(`/topic/rideRequest/${driverId}`, function (data) {
+                const rideRequest = JSON.parse(data.body);
+                const bookingId = rideRequest.bookingId;
+                const passengerId = rideRequest.passengerId;
+
+                console.log("New ride request received:", rideRequest);
+
+                const accept = confirm(`New ride request from passenger ${passengerId}. Accept?`);
+                if (accept) {
+                    stompClient.send(`/app/rideResponse/${driverId}`, {}, JSON.stringify({
+                        response: true,
+                        bookingId: bookingId
+                    }));
+                } else {
+                    stompClient.send(`/app/rideResponse/${driverId}`, {}, JSON.stringify({
+                        response: false,
+                        bookingId: bookingId
+                    }));
+                }
+            });
+        });
+    }
+</script>
+
+</body>
+</html>
