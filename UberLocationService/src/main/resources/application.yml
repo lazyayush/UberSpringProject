@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: UberLocationService
+
+  data:
+    redis:
+      host: localhost
+      port: 6380
+
+server:
+  port: 7477
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    preferIpAddress: true

@@ -1,7 +1,9 @@
 package com.app.UberLocationService.service;
 
 import com.app.UberLocationService.dto.DriverLocationDto;
+import jakarta.annotation.PostConstruct;
 import org.springframework.data.geo.*;
+import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.connection.RedisGeoCommands;
 import org.springframework.data.redis.core.GeoOperations;
 import org.springframework.data.redis.core.StringRedisTemplate;
