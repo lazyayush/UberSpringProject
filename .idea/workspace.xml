@@ -6,12 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0eb26778-cc15-4453-975c-22be939693b2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberAuthService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/UberAuthService/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberLocationService/src/main/java/com/app/UberLocationService/config/RedisConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/repositories/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/repositories/BookingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/service/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/service/BookingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberLocationService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/UberLocationService/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberLocationService/src/main/java/com/app/UberLocationService/UberLocationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberLocationService/src/main/java/com/app/UberLocationService/UberLocationServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UberLocationService/src/main/java/com/app/UberLocationService/service/LocationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberLocationService/src/main/java/com/app/UberLocationService/service/LocationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberLocationService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UberLocationService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberLocationService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UberLocationService/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

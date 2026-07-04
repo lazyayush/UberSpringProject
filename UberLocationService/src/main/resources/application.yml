@@ -2,6 +2,15 @@ spring:
   application:
     name: UberLocationService
 
+  datasource:
+    url: jdbc:mysql://localhost:3306/UberDB
+    username: root
+    password: ri0De7@nerio
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+
   data:
     redis:
       host: localhost
