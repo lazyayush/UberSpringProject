@@ -1,8 +1,10 @@
 package com.app.UberAuthService.controller;
 
 import com.app.UberAuthService.dto.*;
+import com.app.UberAuthService.repository.PassengerRepository;
 import com.app.UberAuthService.service.AuthService;
 import com.app.UberAuthService.service.JwtService;
+import com.app.UberEntityService.models.Passenger;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -23,11 +25,13 @@ public class AuthController {
     private final AuthService authService;
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
+    private final PassengerRepository passengerRepository;
 
-    public AuthController(AuthService authService, JwtService jwtService, AuthenticationManager authenticationManager) {
+    public AuthController(AuthService authService, JwtService jwtService, AuthenticationManager authenticationManager, PassengerRepository passengerRepository) {
         this.authService = authService;
         this.jwtService = jwtService;
         this.authenticationManager = authenticationManager;
+        this.passengerRepository = passengerRepository;
     }
 
     @PostMapping("/signup/passenger")
@@ -38,13 +42,19 @@ public class AuthController {
 
     @PostMapping("/signIn/passenger")
     public ResponseEntity<?> singInPassenger(@RequestBody AuthRequestDto request, HttpServletResponse response){
-        Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(request.getEmail(), request.getPassword()));
+        Authentication authentication = authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(request.getEmail(), request.getPassword()));
+
         if(authentication.isAuthenticated()){
-            String jwtToken = jwtService.generateToken(request.getEmail());
+            Passenger passenger = passengerRepository.findPassengerByEmail(request.getEmail())
+                    .orElseThrow(() -> new UsernameNotFoundException("User not found!"));
+
+            String jwtToken = jwtService.generateToken(passenger.getId(), "PASSENGER", request.getEmail());
 
             ResponseCookie cookie = ResponseCookie.from("JwtToken", jwtToken)
                     .httpOnly(true)
                     .secure(false)
+                    .sameSite("Strict")
                     .path("/")
                     .maxAge(7*24*3600)
                     .build();
@@ -63,15 +73,6 @@ public class AuthController {
     public ResponseEntity<?> signupDriver(@RequestBody DriverSignupDto driver){
         DriverDto response = authService.signupDriver(driver);
         return new ResponseEntity<>(response, HttpStatus.CREATED);
-    }
-
-    //to validate incoming request from other microservices
-    @GetMapping("/validate")
-    public ResponseEntity<?> validate(HttpServletRequest request, HttpServletResponse response){
-        for(Cookie cookie : request.getCookies()){
-            System.out.println(cookie.getName() + " " + cookie.getValue());
-        }
-        return new ResponseEntity<>("Success", HttpStatus.OK);
     }
 
 }

@@ -5,21 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0eb26778-cc15-4453-975c-22be939693b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/UberApiGateway/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UberApiGateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UberApiGateway/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UberApiGateway/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UberApiGateway/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UberApiGateway/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UberApiGateway/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UberApiGateway/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UberApiGateway/src/main/java/com/app/UberApiGateway/UberApiGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UberApiGateway/src/main/java/com/app/UberApiGateway/filter/JwtAuthGlobalFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UberApiGateway/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UberApiGateway/src/test/java/com/app/UberApiGateway/UberApiGatewayApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberBookingService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/UberBookingServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/UberBookingServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/apis/LocationServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/apis/LocationServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/apis/UberSocketApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/apis/UberSocketApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/config/RetrofitConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/repositories/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/repositories/BookingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/service/BookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/service/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/service/BookingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberLocationService/src/main/java/com/app/UberLocationService/service/LocationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberLocationService/src/main/java/com/app/UberLocationService/service/LocationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberSocketServer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/UberSocketServer/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberSocketServer/src/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/UberSocketServer/src/main/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberSocketServer/src/main/java/com/app/UberSocketServer/UberSocketServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberSocketServer/src/main/java/com/app/UberSocketServer/UberSocketServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberSocketServer/src/main/java/com/app/UberSocketServer/controller/DriverRequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberSocketServer/src/main/java/com/app/UberSocketServer/controller/DriverRequestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberAuthService/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/UberAuthService/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberAuthService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/UberAuthService/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberAuthService/src/main/java/com/app/UberAuthService/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberAuthService/src/main/java/com/app/UberAuthService/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberAuthService/src/main/java/com/app/UberAuthService/dto/DriverDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberAuthService/src/main/java/com/app/UberAuthService/dto/DriverDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberAuthService/src/main/java/com/app/UberAuthService/dto/PassengerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberAuthService/src/main/java/com/app/UberAuthService/dto/PassengerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberAuthService/src/main/java/com/app/UberAuthService/service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberAuthService/src/main/java/com/app/UberAuthService/service/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberAuthService/src/main/java/com/app/UberAuthService/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberAuthService/src/main/java/com/app/UberAuthService/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberAuthService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UberAuthService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/controller/BookingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberSocketServer/src/main/java/com/app/UberSocketServer/service/RideResponseProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberSocketServer/src/main/java/com/app/UberSocketServer/service/RideResponseProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +37,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/UberApiGateway">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/UberAuthService">
       <ProjectState />
     </projectState>
@@ -105,13 +118,37 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.UberAuthService [build]">
+  <component name="RunManager" selected="Application.UberApiGateway">
+    <configuration name="UberApiGateway" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="envFilePaths">
+        <option value="$PROJECT_DIR$/UberApiGateway/.env" />
+      </option>
+      <option name="MAIN_CLASS_NAME" value="com.app.UberApiGateway.UberApiGatewayApplication" />
+      <module name="UberApiGateway.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UberAuthService" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="envFilePaths">
+        <option value="$PROJECT_DIR$/UberAuthService/.env" />
+      </option>
+      <option name="MAIN_CLASS_NAME" value="com.app.UberAuthService.UberAuthServiceApplication" />
+      <module name="UberAuthService.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UberAuthService [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/UberAuthService" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -150,6 +187,12 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.UberAuthService" />
+      <item itemvalue="Application.UberApiGateway" />
+      <item itemvalue="Gradle.UberAuthService [build]" />
+      <item itemvalue="Gradle.UberAuthService [clean]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.UberAuthService [build]" />

@@ -1,7 +1,5 @@
 package com.app.UberAuthService.dto;
 
-import com.app.UberEntityService.models.Booking;
-import com.app.UberEntityService.models.Color;
 import com.app.UberEntityService.models.Passenger;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,19 +13,17 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class PassengerDto {
-    private String id;
+    private Long id;
     private String name;
     private String email;
-    private String password;
     private String phoneNumber;
     private Date createdAt;
 
     public static PassengerDto from(Passenger p){
         return PassengerDto.builder()
-                .id(p.getId().toString())
+                .id(p.getId())
                 .name(p.getName())
                 .phoneNumber(p.getPhoneNumber())
-                .password(p.getPassword())
                 .email(p.getEmail())
                 .createdAt(p.getCreatedAt())
                 .build();

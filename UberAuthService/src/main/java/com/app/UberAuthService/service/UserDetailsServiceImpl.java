@@ -17,10 +17,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Autowired
     private PassengerRepository passengerRepository;
 
-//    public UserDetailsServiceImpl(PassengerRepository passengerRepository) {
-//        this.passengerRepository = passengerRepository;
-//    }
-
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         Optional<Passenger> passenger = passengerRepository.findPassengerByEmail(email);

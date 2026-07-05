@@ -29,7 +29,6 @@ public class RideResponseProcessor {
                 .driverId(Optional.of(Long.parseLong(driverId)))
                 .bookingStatus(BookingStatus.SCHEDULED)
                 .build();
-
         try{
             var result = bookingServiceApi.updateBooking(responseDto.getBookingId(), dto);
             System.out.println("Booking confirmed for driver " + driverId + ": " + result);

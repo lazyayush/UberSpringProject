@@ -18,7 +18,6 @@ public class DriverDto {
     private String licenseNumber;
     private String phoneNumber;
     private String email;
-    private String password;
     private Date createdAt;
 
     public static DriverDto from(Driver d){
@@ -26,7 +25,6 @@ public class DriverDto {
                 .id(d.getId().toString())
                 .name(d.getName())
                 .email(d.getEmail())
-                .password(d.getPassword())
                 .licenseNumber(d.getLicenseNumber())
                 .phoneNumber(d.getPhoneNumber())
                 .createdAt(d.getCreatedAt())
