@@ -26,7 +26,7 @@ public class LocationServiceImpl implements LocationService{
     private static final String DRIVER_GEO_OPS_KEY = "driver";
     private static final String ONLINE_KEY_PREFIX = "driver:online:";
     private static final Double SEARCH_RADIUS = 5.0;
-    private static final Duration ONLINE_TTL = Duration.ofSeconds(240);
+    private static final Duration ONLINE_TTL = Duration.ofSeconds(600);
 
     public LocationServiceImpl(StringRedisTemplate stringRedisTemplate, DriverRepository driverRepository) {
         this.stringRedisTemplate = stringRedisTemplate;

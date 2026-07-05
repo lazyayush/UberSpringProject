@@ -3,12 +3,15 @@ package com.app.UberBookingService.apis;
 
 import com.app.UberBookingService.dto.DriverLocationDto;
 import com.app.UberBookingService.dto.NearbyDriversRequestDto;
-import retrofit2.Call;
-import retrofit2.http.Body;
-import retrofit2.http.POST;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
+import java.util.List;
+
+@FeignClient(name = "UberLocationService")
 public interface LocationServiceApi {
 
-    @POST("/api/location/nearby/drivers")
-    Call<DriverLocationDto[]> getNearbyDrivers(@Body NearbyDriversRequestDto requestDto);
+    @PostMapping("/api/location/nearby/drivers")
+    List<DriverLocationDto> getNearbyDrivers(@RequestBody NearbyDriversRequestDto requestDto);
 }

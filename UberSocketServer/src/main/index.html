@@ -34,7 +34,15 @@
 
             // Subscribe only to your own driver topic
             stompClient.subscribe(`/topic/rideRequest/${driverId}`, function (data) {
-                const rideRequest = JSON.parse(data.body);
+
+                const message = JSON.parse(data.body);
+
+                if(message.status === "ALREADY_ACCEPTED") {
+                    alert(`Booking ${message.bookingId} was already accepted by another driver.`);
+                    return;
+                }
+
+                const rideRequest = message;
                 const bookingId = rideRequest.bookingId;
                 const passengerId = rideRequest.passengerId;
 

@@ -7,12 +7,19 @@
     <list default="true" id="0eb26778-cc15-4453-975c-22be939693b2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberBookingService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/UberBookingServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/UberBookingServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/apis/LocationServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/apis/LocationServiceApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/apis/UberSocketApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/apis/UberSocketApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/config/RetrofitConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/repositories/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/repositories/BookingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/service/BookingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/service/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/service/BookingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberLocationService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/UberLocationService/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberLocationService/src/main/java/com/app/UberLocationService/UberLocationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberLocationService/src/main/java/com/app/UberLocationService/UberLocationServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UberLocationService/src/main/java/com/app/UberLocationService/service/LocationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberLocationService/src/main/java/com/app/UberLocationService/service/LocationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberLocationService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UberLocationService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberSocketServer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/UberSocketServer/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberSocketServer/src/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/UberSocketServer/src/main/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberSocketServer/src/main/java/com/app/UberSocketServer/UberSocketServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberSocketServer/src/main/java/com/app/UberSocketServer/UberSocketServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberSocketServer/src/main/java/com/app/UberSocketServer/controller/DriverRequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberSocketServer/src/main/java/com/app/UberSocketServer/controller/DriverRequestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +67,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -75,6 +83,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="36kCRT73HfwsmB9z0zNt6z5pGaS" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
