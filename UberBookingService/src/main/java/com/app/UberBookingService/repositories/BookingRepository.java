@@ -20,4 +20,10 @@ public interface BookingRepository extends JpaRepository<Booking, Long> {
                                           @Param("status")BookingStatus status,
                                           @Param("driver")Driver driver,
                                           @Param("expectedStatus") BookingStatus expectedStatus);
+
+    @Modifying(clearAutomatically = true, flushAutomatically = true)
+    @Transactional
+    @Query("UPDATE Booking b SET b.bookingStatus = 'COMPLETED' " +
+            "WHERE b.id = :id AND b.bookingStatus IN ('SCHEDULED','IN_RIDE','CAB_ARRIVED')")
+    int completeBooking(@Param("id") Long id);
 }

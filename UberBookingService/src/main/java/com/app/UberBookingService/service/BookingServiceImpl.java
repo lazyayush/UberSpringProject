@@ -4,6 +4,7 @@ import com.app.UberBookingService.apis.LocationServiceApi;
 import com.app.UberBookingService.apis.UberSocketApi;
 import com.app.UberBookingService.dto.*;
 import com.app.UberBookingService.exceptions.BookingAlreadyAssignedException;
+import com.app.UberBookingService.exceptions.InvalidBookingStateException;
 import com.app.UberBookingService.repositories.BookingRepository;
 import com.app.UberBookingService.repositories.DriverRepository;
 import com.app.UberBookingService.repositories.PassengerRepository;
@@ -131,6 +132,15 @@ public class BookingServiceImpl implements BookingService{
             } catch (Exception e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    @Override
+    public void completeBooking(Long bookingId) {
+        int rowsUpdated = bookingRepository.completeBooking(bookingId);
+        if (rowsUpdated == 0) {
+            throw new InvalidBookingStateException(
+                    "Booking " + bookingId + " cannot be completed from its current state");
         }
     }
 }

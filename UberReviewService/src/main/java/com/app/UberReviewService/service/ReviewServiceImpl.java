@@ -1,6 +1,12 @@
 package com.app.UberReviewService.service;
 
-import com.app.UberReviewService.models.Review;
+import com.app.UberEntityService.models.BookingStatus;
+import com.app.UberEntityService.models.Driver;
+import com.app.UberEntityService.models.Review;
+import com.app.UberReviewService.exceptions.DuplicateReviewException;
+import com.app.UberReviewService.exceptions.ReviewValidationException;
+import com.app.UberReviewService.exceptions.UnauthorizedReviewException;
+import com.app.UberReviewService.repositories.DriverRepository;
 import com.app.UberReviewService.repositories.ReviewRepository;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
@@ -13,9 +19,11 @@ import java.util.Optional;
 public class ReviewServiceImpl implements ReviewService {
 
     private final ReviewRepository reviewRepository;
+    private final DriverRepository driverRepository;
 
-    public ReviewServiceImpl(ReviewRepository reviewRepository) {
+    public ReviewServiceImpl(ReviewRepository reviewRepository, DriverRepository driverRepository) {
         this.reviewRepository = reviewRepository;
+        this.driverRepository = driverRepository;
     }
 
 
@@ -47,19 +55,32 @@ public class ReviewServiceImpl implements ReviewService {
 
     @Override
     @Transactional
-    public Review publishReview(Review review) {
-        return reviewRepository.save(review);
-    }
+    public Review publishReview(Review review, Long reviewerId) {
+        var booking = review.getBooking();
 
-    @Override
-    public Review updateReview(Long id, Review updatedReview) {
-        Review review = reviewRepository.findById(id).orElseThrow(EntityNotFoundException::new);
-        if(updatedReview.getRating() != null){
-            review.setRating(updatedReview.getRating());
+        if(booking.getBookingStatus() != BookingStatus.COMPLETED) {
+            throw new ReviewValidationException("Booking must be completed before it can be reviewed");
         }
-        if(updatedReview.getContent() != null){
-            review.setContent(updatedReview.getContent());
+
+        if (!booking.getPassenger().getId().equals(reviewerId)) {
+            throw new UnauthorizedReviewException("Only the passenger on this booking can submit a review");
         }
-        return reviewRepository.save(review);
+
+        if (reviewRepository.findReviewByBookingId(booking.getId()).isPresent()) {
+            throw new DuplicateReviewException("A review already exists for booking " + booking.getId());
+        }
+
+        Review savedReview = reviewRepository.save(review);
+
+        Driver driver = booking.getDriver();
+        int prevCount = driver.getNumRatings() == null ? 0 : driver.getNumRatings();
+        double prevRating = driver.getRating() == null ? 0 : driver.getRating();
+
+        double newRating = ((prevRating * prevCount) + savedReview.getRating()) / (prevCount + 1);
+        driver.setRating(newRating);
+        driver.setNumRatings(prevCount + 1);
+        driverRepository.save(driver);
+
+        return savedReview;
     }
 }

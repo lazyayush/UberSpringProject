@@ -31,4 +31,10 @@ public class BookingController {
     public ResponseEntity<UpdateBookingResponseDto> updateBooking(@RequestBody UpdateBookingRequestDto updateBooking, @PathVariable Long bookingId){
         return new ResponseEntity<>(bookingService.updateBooking(updateBooking, bookingId), HttpStatus.OK);
     }
+
+    @PostMapping("/{bookingId}/complete")
+    public ResponseEntity<Void> completeBooking(@PathVariable Long bookingId){
+        bookingService.completeBooking(bookingId);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
 }

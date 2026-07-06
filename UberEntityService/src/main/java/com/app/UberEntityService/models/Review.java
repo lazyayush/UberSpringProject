@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
 @Builder
 @Entity
 @Table(name = "booking_review")
-@Inheritance(strategy = InheritanceType.JOINED)
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Review extends BaseModel{
 
@@ -22,8 +21,8 @@ public class Review extends BaseModel{
 
     private Double rating;
 
-    @OneToOne(cascade = {CascadeType.ALL}, fetch = FetchType.LAZY)
-    @JoinColumn(nullable = false)
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(nullable = false, unique = true)
     private Booking booking;
 
     @Override

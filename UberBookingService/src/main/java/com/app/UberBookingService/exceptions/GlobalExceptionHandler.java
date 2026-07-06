@@ -12,4 +12,9 @@ public class GlobalExceptionHandler {
     public ResponseEntity<String> handleBookingAlreadyAssigned(BookingAlreadyAssignedException ex) {
         return ResponseEntity.status(HttpStatus.CONFLICT).body(ex.getMessage());
     }
+
+    @ExceptionHandler(InvalidBookingStateException.class)
+    public ResponseEntity<String> handleInvalidBookingState(InvalidBookingStateException ex) {
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
+    }
 }

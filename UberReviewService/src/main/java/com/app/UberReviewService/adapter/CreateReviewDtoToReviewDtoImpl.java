@@ -1,8 +1,8 @@
 package com.app.UberReviewService.adapter;
 
+import com.app.UberEntityService.models.Booking;
+import com.app.UberEntityService.models.Review;
 import com.app.UberReviewService.dto.CreateReviewDto;
-import com.app.UberReviewService.models.Booking;
-import com.app.UberReviewService.models.Review;
 import com.app.UberReviewService.repositories.BookingRepository;
 import org.springframework.stereotype.Component;
 

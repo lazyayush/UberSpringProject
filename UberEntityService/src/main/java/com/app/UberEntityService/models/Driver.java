@@ -52,6 +52,10 @@ public class Driver extends BaseModel{
     @DecimalMax(value = "5.0", message = "Rating should be less than or equal to 5.0")
     private Double rating;
 
+    @Column(nullable = false)
+    @Builder.Default
+    private Integer numRatings = 0;
+
     @OneToMany(mappedBy = "driver")
     @Fetch(FetchMode.SUBSELECT)
     private List<Booking> bookings;

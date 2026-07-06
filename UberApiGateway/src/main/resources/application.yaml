@@ -27,6 +27,11 @@ spring:
           predicates:
             - Path=/ws/**, /api/socket/**
 
+        - id: review-service
+          uri: lb://UBERREVIEWSERVICE
+          predicates:
+            - Path=/api/v1/reviews/**
+
 server:
   port: 8080
 

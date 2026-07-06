@@ -7,4 +7,5 @@ public interface BookingService {
     CreateBookingResponseDto createBooking(CreateBookingDto bookingDto);
     UpdateBookingResponseDto updateBooking(UpdateBookingRequestDto updateBookingDto, Long bookingId);
     void processNearbyDriversAsync(NearbyDriversRequestDto nearbyDriversRequestDto, Long passengerId, Long bookingId);
+    void completeBooking(Long bookingId);
 }
