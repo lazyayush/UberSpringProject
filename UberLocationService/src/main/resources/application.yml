@@ -3,8 +3,8 @@ spring:
     name: UberLocationService
 
   datasource:
-    url: jdbc:mysql://localhost:3306/UberDB
-    username: root
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
 
   jpa:
@@ -13,15 +13,15 @@ spring:
 
   data:
     redis:
-      host: localhost
-      port: 6380
+      url: ${REDIS_URL}
 
 server:
+  address: 0.0.0.0
   port: 7477
 
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: ${EUREKA_URL}
   instance:
     preferIpAddress: true

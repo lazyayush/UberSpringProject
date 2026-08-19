@@ -6,39 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0eb26778-cc15-4453-975c-22be939693b2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/UberReviewService.main.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberApiGateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/UberApiGateway/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberAuthService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UberAuthService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberBookingService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/controller/BookingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/exceptions/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/exceptions/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/repositories/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/repositories/BookingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/service/BookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/service/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/java/com/app/UberBookingService/service/BookingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberBookingService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UberBookingService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberEntityService/src/main/java/com/app/UberEntityService/models/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberEntityService/src/main/java/com/app/UberEntityService/models/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberEntityService/src/main/java/com/app/UberEntityService/models/PassengerReview.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberEntityService/src/main/java/com/app/UberEntityService/models/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberEntityService/src/main/java/com/app/UberEntityService/models/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberReviewService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/UberReviewService/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/UberReviewServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/UberReviewServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/adapter/CreateReviewDtoToReviewDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/adapter/CreateReviewDtoToReviewDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/adapter/CreateReviewDtoToReviewDtoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/adapter/CreateReviewDtoToReviewDtoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/controller/ReviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/models/BaseModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/models/Booking.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/models/BookingStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/models/Driver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/models/Passenger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/models/PassengerReview.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/models/Review.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/repositories/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/repositories/BookingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/repositories/DriverRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/repositories/DriverRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/repositories/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/repositories/ReviewRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/service/ReviewService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/service/ReviewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberReviewService/src/main/java/com/app/UberReviewService/service/ReviewServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberReviewService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UberReviewService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberSocketServer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/UberSocketServer/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberLocationService/src/main/java/com/app/UberLocationService/controller/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberLocationService/src/main/java/com/app/UberLocationService/controller/LocationController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,8 +166,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.UberAuthService" />
       <item itemvalue="Application.UberApiGateway" />
+      <item itemvalue="Application.UberAuthService" />
       <item itemvalue="Gradle.UberAuthService [build]" />
       <item itemvalue="Gradle.UberAuthService [clean]" />
     </list>

@@ -33,12 +33,13 @@ spring:
             - Path=/api/v1/reviews/**
 
 server:
+  address: 0.0.0.0
   port: 8080
 
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: ${EUREKA_URL}
   instance:
     preferIpAddress: true
 
