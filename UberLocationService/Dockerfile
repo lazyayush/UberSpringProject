@@ -2,6 +2,8 @@
 FROM eclipse-temurin:21-jdk-alpine AS entity-build
 WORKDIR /entity
 COPY UberEntityService/ .
+
+RUN chmod +x ./gradlew
 RUN ./gradlew publishToMavenLocal --no-daemon
 
 # Stage 2: resolve dependencies (cached separately from source)
@@ -12,6 +14,9 @@ COPY UberLocationService/gradlew .
 COPY UberLocationService/gradle gradle
 COPY UberLocationService/build.gradle .
 COPY UberLocationService/settings.gradle* .
+
+
+RUN chmod +x ./gradlew
 RUN ./gradlew dependencies --no-daemon
 
 # Stage 3: copy source, compile

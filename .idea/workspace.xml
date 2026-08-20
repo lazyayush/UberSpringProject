@@ -7,7 +7,7 @@
     <list default="true" id="0eb26778-cc15-4453-975c-22be939693b2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UberLocationService/src/main/java/com/app/UberLocationService/controller/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UberLocationService/src/main/java/com/app/UberLocationService/controller/LocationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UberLocationService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/UberLocationService/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
